@@ -5,4 +5,40 @@
     android:background="@drawable/background"
     tools:context="me.androidbox.gogobot.MainFragment">
 
+    <ImageView
+        android:id="@+id/ivEat"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_restaurant_menu_white_48dp"
+        android:background="@drawable/eat"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/ivStay"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toLeftOf="@id/ivEat"
+        android:layout_toStartOf="@id/ivEat"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_location_city_white_48dp"
+        android:background="@drawable/stay"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/ivPlay"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/ivEat"
+        android:layout_toEndOf="@id/ivEat"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_local_activity_white_48dp"
+        android:background="@drawable/play"
+        android:scaleType="centerInside"/>
+
+
 </RelativeLayout>

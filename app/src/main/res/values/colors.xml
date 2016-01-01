@@ -5,4 +5,10 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="colorBackground">#993F51B5</color>
+    <!-- Deep Orange 400 -->
+    <color name="colorEat">#ff7043</color>
+    <!-- Light Blue 400 -->
+    <color name="colorPlay">#29b6f6</color>
+    <!-- Teal 300 -->
+    <color name="colorStay">#4db6ac</color>
 </resources>
