@@ -11,4 +11,6 @@
     <color name="colorPlay">#29b6f6</color>
     <!-- Teal 300 -->
     <color name="colorStay">#4db6ac</color>
+    <!-- Grey 300 -->
+    <color name="colorSearchBackground">#99E0E0E0</color>
 </resources>

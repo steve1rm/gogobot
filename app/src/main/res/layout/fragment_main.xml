@@ -5,6 +5,13 @@
     android:background="@drawable/background"
     tools:context="me.androidbox.gogobot.MainFragment">
 
+    <include
+        layout="@layout/search_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
     <ImageView
         android:id="@+id/ivEat"
         android:layout_width="80dp"
