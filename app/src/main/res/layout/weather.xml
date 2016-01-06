@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingStart="16dp"
+    android:paddingLeft="16dp"
+    android:paddingEnd="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/tvWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="66 F"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-medium"/>
+
+    <ImageView
+        android:id="@+id/ivMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_on_white_24dp"/>
+
+    <TextView
+        android:id="@+id/tvMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
+
+    <ImageView
+        android:id="@+id/ivTue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_on_white_24dp"/>
+
+    <TextView
+        android:id="@+id/tvTue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tue"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
+
+    <ImageView
+        android:id="@+id/ivWed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_on_white_24dp"/>
+
+    <TextView
+        android:id="@+id/tvWed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wed"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
+
+
+    <ImageView
+        android:id="@+id/ivThu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_on_white_24dp"/>
+
+    <TextView
+        android:id="@+id/tvThu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thu"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
+
+
+    <ImageView
+        android:id="@+id/ivFri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_on_white_24dp"/>
+
+    <TextView
+        android:id="@+id/tvFri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fri"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
+
+
+    <ImageView
+        android:id="@+id/ivSat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_on_white_24dp"/>
+
+    <TextView
+        android:id="@+id/tvSat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sat"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
+
+
+    <ImageView
+        android:id="@+id/ivSun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_on_white_24dp"/>
+
+    <TextView
+        android:id="@+id/tvSun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sun"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
+
+</RelativeLayout>
