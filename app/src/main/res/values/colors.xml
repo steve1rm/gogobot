@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="transparent">@android:color/transparent</color>
     <color name="colorBackground">#993F51B5</color>
     <!-- Deep Orange 400 -->
     <color name="colorEat">#ff7043</color>
