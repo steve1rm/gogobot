@@ -1,161 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingTop="20dp"
-    android:paddingBottom="20dp"
-    android:paddingStart="16dp"
-    android:paddingLeft="16dp"
+    android:layout_height="80dp"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"
     android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:background="@color/colorPrimary">
+    android:paddingStart="16dp">
 
     <TextView
         android:id="@+id/tvWeather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-medium"
         android:text="66 F"
-        android:textSize="24sp"
         android:textColor="@android:color/white"
-        android:fontFamily="sans-serif-medium"/>
+        android:textSize="24sp"/>
 
-    <TableLayout
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:columnCount="7"
+        android:rowCount="3">
 
-        <TableRow>
-            <ImageView
-                android:id="@+id/ivMon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_location_on_white_24dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:padding="2dp"/>
+        <ImageView
+            android:id="@+id/ivMon"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_white_24dp"/>
 
-            <ImageView
-                android:id="@+id/ivTue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_location_on_white_24dp"
-                android:layout_weight="1"/>
-            <ImageView
-                android:id="@+id/ivWed"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_location_on_white_24dp"
-                android:layout_weight="1"
-                />
+        <ImageView
+            android:id="@+id/ivTue"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_white_24dp"/>
 
-            <ImageView
-                android:id="@+id/ivThu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_location_on_white_24dp"
-                android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/ivWed"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_white_24dp"/>
 
-            <ImageView
-                android:id="@+id/ivFri"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_location_on_white_24dp"
-                android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/ivThu"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_white_24dp"/>
 
-            <ImageView
-                android:id="@+id/ivSat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_location_on_white_24dp"
-                android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/ivFri"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_white_24dp"/>
 
-            <ImageView
-                android:id="@+id/ivSun"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_location_on_white_24dp"
-                android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/ivSat"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_white_24dp"/>
 
+        <ImageView
+            android:id="@+id/ivSun"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_white_24dp"/>
 
-        </TableRow>
+        <Space
+            android:layout_height="4dp"
+            android:layout_columnSpan="7"/>
 
-        <TableRow>
-            <TextView
-                android:id="@+id/tvMon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mon"
-                android:textSize="16sp"
-                android:fontFamily="sans-serif"
-                android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvMon"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:text="Mon"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
 
+        <TextView
+            android:id="@+id/tvTue"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:text="Tue"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
 
-            <TextView
-                android:id="@+id/tvTue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tue"
-                android:textSize="16sp"
-                android:fontFamily="sans-serif"
-                android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvWed"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:text="Wed"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
 
+        <TextView
+            android:id="@+id/tvThu"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:text="Thu"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
 
-            <TextView
-                android:id="@+id/tvWed"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Wed"
-                android:textSize="16sp"
-                android:fontFamily="sans-serif"
-                android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvFri"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:text="Fri"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
 
-            <TextView
-                android:id="@+id/tvThu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Thu"
-                android:textSize="16sp"
-                android:fontFamily="sans-serif"
-                android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvSat"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:text="Sat"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
 
-            <TextView
-                android:id="@+id/tvFri"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fri"
-                android:textSize="16sp"
-                android:fontFamily="sans-serif"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:id="@+id/tvSat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sat"
-                android:textSize="16sp"
-                android:fontFamily="sans-serif"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:id="@+id/tvSun"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sun"
-                android:textSize="16sp"
-                android:fontFamily="sans-serif"
-                android:layout_weight="1"/>
-
-        </TableRow>
-    </TableLayout>
-
-
-
-
-
-
+        <TextView
+            android:id="@+id/tvSun"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:text="Sun"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+    </GridLayout>
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 <android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -49,6 +50,32 @@
             android:background="@drawable/play"
             android:scaleType="centerInside"/>
 
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:columnCount="2"
+            app:rowCount="2">
+
+            <include
+                layout="@layout/weather"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                app:layout_columnSpan="2"/>
+
+            <include
+                layout="@layout/trending"
+                android:layout_height="80dp"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"/>
+
+            <include
+                layout="@layout/about"
+                android:layout_height="80dp"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"/>
+
+        </android.support.v7.widget.GridLayout>
 
     </RelativeLayout>
 

@@ -17,6 +17,4 @@
     android:textColorHint="@android:color/white"
     android:fontFamily="sans-serif-medium"
     android:hint="Search: e.g. Paris or Hotel">
-
-
 </EditText>
