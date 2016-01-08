@@ -2,10 +2,10 @@ package me.androidbox.gogobot;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.support.v8.renderscript.Element;
-import android.support.v8.renderscript.Allocation;
-import android.support.v8.renderscript.ScriptIntrinsicBlur;
-import android.support.v8.renderscript.RenderScript;
+import android.renderscript.Element;
+import android.renderscript.Allocation;
+import android.renderscript.ScriptIntrinsicBlur;
+import android.renderscript.RenderScript;
 import android.util.Log;
 
 /**
@@ -13,8 +13,8 @@ import android.util.Log;
  */
 public class BitmapUtils {
     private static final String TAG = BitmapUtils.class.getSimpleName();
-    private static final float BLUR_RADIUS = 20.5f;
-    private static final float BITMAP_SCALE = 0.8f;
+    private static final float BLUR_RADIUS = 20f;
+    private static final float BITMAP_SCALE = 0.4f;
 
     /**
      * Take an bitmap image and create a blur effect
@@ -48,4 +48,24 @@ public class BitmapUtils {
 
         return outputBitmap;
     }
+
+    public static Bitmap blur(final Context context, final Bitmap image) {
+        if (null == image) return null;
+
+        Bitmap outputBitmap = Bitmap.createBitmap(image);
+        final RenderScript renderScript = RenderScript.create(context);
+        Allocation tmpIn = Allocation.createFromBitmap(renderScript, image);
+        Allocation tmpOut = Allocation.createFromBitmap(renderScript, outputBitmap);
+
+        //Intrinsic Gausian blur filter
+        ScriptIntrinsicBlur theIntrinsic = ScriptIntrinsicBlur.create(renderScript, Element.U8_4(renderScript));
+        theIntrinsic.setRadius(BLUR_RADIUS);
+        theIntrinsic.setInput(tmpIn);
+        theIntrinsic.forEach(tmpOut);
+        tmpOut.copyTo(outputBitmap);
+        return outputBitmap;
+    }
+
+
+
 }

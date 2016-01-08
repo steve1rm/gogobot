@@ -14,11 +14,18 @@
         <ImageView
             android:id="@+id/ivBackground"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/background"/>
+            android:layout_height="match_parent"/>
 
         <include
+            android:id="@+id/tool_bar"
             layout="@layout/tool_bar" />
+
+        <include
+            layout="@layout/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tool_bar"
+            android:layout_marginTop="40dp"/>
 
         <ImageView
             android:id="@+id/ivEat"
@@ -60,7 +67,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             app:columnCount="2"
-            app:rowCount="2">
+            app:rowCount="2"
+            android:id="@+id/android.support.v7.widget.GridLayout">
 
             <include
                 layout="@layout/weather"
@@ -86,7 +94,6 @@
                 android:layout_width="wrap_content"
                 app:layout_columnSpan="2"/>
         </android.support.v7.widget.GridLayout>
-
     </RelativeLayout>
 
 </android.support.v4.widget.DrawerLayout>

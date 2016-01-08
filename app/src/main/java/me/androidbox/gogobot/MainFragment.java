@@ -45,11 +45,12 @@ public class MainFragment extends Fragment {
         /* Get the bitmap from the background */
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inMutable = true;
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.background_pic, options);
-        final Bitmap blurredBitmap = BitmapUtils.blurImage(getActivity(), bitmap);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.background_image, options);
+        final Bitmap blurredBitmap = BitmapUtils.blur(getActivity(), bitmap);
 
         final ImageView ivBackground = (ImageView)view.findViewById(R.id.ivBackground);
         ivBackground.setImageBitmap(blurredBitmap);
+        ivBackground.setScaleType(ImageView.ScaleType.FIT_XY);
 
         return view;
     }

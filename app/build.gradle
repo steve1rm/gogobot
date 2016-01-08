@@ -6,13 +6,13 @@ android {
 
     defaultConfig {
         applicationId "me.androidbox.gogobot"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
-
+/*
         renderscriptTargetApi 18
-        renderscriptSupportModeEnabled true
+        renderscriptSupportModeEnabled true*/
     }
     buildTypes {
         release {
