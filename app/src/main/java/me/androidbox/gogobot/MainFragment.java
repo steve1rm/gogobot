@@ -2,6 +2,8 @@ package me.androidbox.gogobot;
 
 
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
@@ -11,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 
 /**
@@ -39,6 +42,15 @@ public class MainFragment extends Fragment {
         appConpactActivity.getSupportActionBar().setDisplayShowTitleEnabled(false);
         appConpactActivity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        /* Get the bitmap from the background */
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inMutable = true;
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.background_pic, options);
+        final Bitmap blurredBitmap = BitmapUtils.blurImage(getActivity(), bitmap);
+
+        final ImageView ivBackground = (ImageView)view.findViewById(R.id.ivBackground);
+        ivBackground.setImageBitmap(blurredBitmap);
+
         return view;
     }
 
@@ -55,4 +67,5 @@ public class MainFragment extends Fragment {
         super.onConfigurationChanged(newConfig);
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
+
 }

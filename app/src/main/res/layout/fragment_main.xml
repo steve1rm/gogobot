@@ -9,8 +9,13 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background"
         tools:context="me.androidbox.gogobot.MainFragment">
+
+        <ImageView
+            android:id="@+id/ivBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"/>
 
         <include
             layout="@layout/tool_bar" />
@@ -53,7 +58,6 @@
         <android.support.v7.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_alignParentBottom="true"
             app:columnCount="2"
             app:rowCount="2">
@@ -75,6 +79,12 @@
                 android:layout_height="80dp"
                 android:layout_width="0dp"
                 app:layout_columnWeight="1"/>
+
+            <include
+                layout="@layout/invitefriends"
+                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                app:layout_columnSpan="2"/>
         </android.support.v7.widget.GridLayout>
 
     </RelativeLayout>

@@ -3,8 +3,4 @@
     <item>
         <bitmap android:src="@drawable/background_pic"/>
     </item>
-
- <!--   <item>
-        <bitmap android:src="@drawable/background_shape"/>
-    </item>-->
 </layer-list>
