@@ -18,7 +18,7 @@
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:fontFamily="sans-serif-medium"
-        android:text="66 F"
+        android:text="66\u2109"
         android:textColor="@android:color/white"
         android:textSize="24sp"/>
 
@@ -35,43 +35,43 @@
             android:id="@+id/ivMon"
             android:layout_width="36dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_location_on_white_24dp"/>
+            android:src="@drawable/fog_day"/>
 
         <ImageView
             android:id="@+id/ivTue"
             android:layout_width="36dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_location_on_white_24dp"/>
+            android:src="@drawable/heavy_rain"/>
 
         <ImageView
             android:id="@+id/ivWed"
             android:layout_width="36dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_location_on_white_24dp"/>
+            android:src="@drawable/partly_cloudy_day"/>
 
         <ImageView
             android:id="@+id/ivThu"
             android:layout_width="36dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_location_on_white_24dp"/>
+            android:src="@drawable/snow"/>
 
         <ImageView
             android:id="@+id/ivFri"
             android:layout_width="36dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_location_on_white_24dp"/>
+            android:src="@drawable/snow_storm"/>
 
         <ImageView
             android:id="@+id/ivSat"
             android:layout_width="36dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_location_on_white_24dp"/>
+            android:src="@drawable/storm"/>
 
         <ImageView
             android:id="@+id/ivSun"
             android:layout_width="36dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_location_on_white_24dp"/>
+            android:src="@drawable/sun"/>
 
         <Space
             android:layout_height="4dp"
